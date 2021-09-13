@@ -2,6 +2,12 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+header {
+  background-color: black;
+}
+main {
+  background-color: lightgoldenrodyellow;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -43,11 +49,13 @@ body {
   justify-content: center;
 }
 .single-product {
+  background-color: white;
   min-height: 480px;
   padding: 10px;
   transition: 0.6s;
   margin: 20px;
   border-radius: 10px;
+  border: 1px solid lightgray;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
@@ -60,12 +68,13 @@ body {
 }
 .cart {
   width: 350px;
-  /* border: 1px solid green; */
+  border: 1px solid lightslategray;
   padding: 10px;
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
   position: fixed;
+  background-color: antiquewhite;
 }
 .cart-main {
   padding-right: 30px;

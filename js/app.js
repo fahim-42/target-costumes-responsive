@@ -98,13 +98,13 @@ let displayProductDetail = product => {
   div.innerHTML = `
   <div class="single-product">
     <div>
-      <img class="product-image" src=${product.image}></img>
+      <img class="product-image mx-auto" src=${product.image}></img>
     </div>
     <div class="w-50">
-      <h3>${product.title}</h3>
-      <p>${product.description}</p>
-      <h5>Product Rating: ${product.rating.rate}</h5>
-      <h3>Price: $ ${product.price}</h3>
+      <h3 class="text-center">${product.title}</h3>
+      <p class="text-center">${product.description}</p>
+      <h5 class="text-center">Product Rating: ${product.rating.rate}</h5>
+      <h3 class="text-center">Price: $ ${product.price}</h3>
     </div>
   </div>`;
   productDetails.appendChild(div);
