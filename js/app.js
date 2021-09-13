@@ -26,12 +26,12 @@ const showProducts = (products) => {
     document.getElementById("all-products").appendChild(div);
   }
 };
+
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
   updatePrice("price", price);
-
-  updateTaxAndCharge();
+  updateTaxAndCharge("price", price);
   updateTotal();
   document.getElementById("total-Products").innerText = count;
 };
@@ -56,7 +56,7 @@ const setInnerText = (id, value) => {
 };
 
 // update delivery charge and total Tax
-const updateTaxAndCharge = () => {
+const updateTaxAndCharge = (id, value) => {
   const priceConverted = getInputValue("price");
   if (priceConverted > 200) {
     setInnerText("delivery-charge", 30);
@@ -77,5 +77,5 @@ const updateTotal = () => {
   const grandTotal =
     getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
-  document.getElementById("total").innerText = grandTotal;
+  document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
