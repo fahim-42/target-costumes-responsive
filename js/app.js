@@ -15,13 +15,13 @@ const showProducts = (products) => {
     div.classList.add("product");
     div.innerHTML = `<div class="single-product">
       <div>
-        <img class="product-image" src=${image}></img>
+        <img class="product-image my-3" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
-      <p>Category: ${product.category}</p>
-      <h6>Product Rating: ${product.rating.rate}</h6>
-      <h6>Total Rating: ${product.rating.count}</h6>
-      <h2>Price: $ ${product.price}</h2>
+      <h4 class="fw-normal mb-3">${product.title}</h4>
+      <p class="fw-bold fst-italic mb-3">Category: ${product.category}</p>
+      <h6 class=" mb-3">Product Rating: ${product.rating.rate}</h6>
+      <h6 class=" mb-3">Total Rating: ${product.rating.count}</h6>
+      <h5 class=" mb-3">Price: $ ${product.price}</h5>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
       <button onclick="loadProductDetail(${product.id})" id="details-btn" class="btn btn-danger">Details</button></div>
       `;

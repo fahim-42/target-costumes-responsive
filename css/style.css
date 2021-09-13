@@ -43,7 +43,7 @@ body {
   justify-content: center;
 }
 .single-product {
-  min-height: 530px;
+  min-height: 480px;
   padding: 10px;
   transition: 0.6s;
   margin: 20px;
