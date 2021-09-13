@@ -13,17 +13,24 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  border: 2px solid rgb(3, 118, 211);
+  width: 400px;
   border-radius: 5px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 10px;
   border-right: none;
+  display: flex;
+}
+.input-field {
+  width: 320px;
+  border: 0;
+}
+.input-field:focus {
+  outline: none;
 }
 .search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 25px;
+  width: 80px;
+  margin-left: auto;
 }
 #all-products {
   display: grid;
